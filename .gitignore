@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ruff_cache/
+backend/data/
+.lock
+# Node
+node_modules/
+frontend/dist/
+frontend/public/data/
+
+# Misc
+.env
+.env.local
+.DS_Store
+.idea/
+.vscode/
+

@@ -1,0 +1,195 @@
+# Site content — the source of truth committed to git.
+# `make seed` rebuilds the SQLite DB from this file; `make export` writes the static JSON for the site.
+# Source: https://ichph.am/laboratories/FMG/ (staff, publications, projects).
+
+site:
+  name: Functional Materials Group
+  tagline: AI-driven design of stable lead-free perovskites
+  description: >-
+    Functional Materials Group of the A.B. Nalbandyan Institute of Chemical Physics, NAS RA.
+    We combine machine learning, DFT and synthesis to discover stable lead-free perovskites
+    for solar cells and LEDs.
+  organization: A.B. Nalbandyan Institute of Chemical Physics, NAS RA
+  address: 5/2 P. Sevak str., Yerevan 0014, Armenia
+  email: ichph@ichph.sci.am
+  phone: "+374 60 62 35 94"
+  hours: ""
+  facebook: https://www.facebook.com/profile.php?id=61567434247434
+  linkedin: https://www.linkedin.com/company/101947389/
+
+pages:
+  - slug: home
+    title: Discovering Stable Lead-Free Perovskites with AI
+    lead: >-
+      We design new perovskite materials for solar cells and LEDs by combining machine learning,
+      density functional theory and laboratory synthesis in a single closed loop.
+  - slug: about
+    title: About the group
+    lead: >-
+      Founded at the end of 2022 at the Institute of Chemical Physics, NAS RA, within a project
+      financed by the Higher Education and Science Committee of the Republic of Armenia.
+    body: |
+      ## Our goal
+
+      The main goal of the group is to find **stable lead-free perovskites** (ABC₃ structures) for
+      photovoltaic (solar cell) and light-emitting (LED) devices. The foreign leader of the project
+      is **Dr. Hayk Khachatryan** (Huawei Finland Research Center).
+
+      ## Approach
+
+      We work in a closed loop:
+
+      1. **Machine learning** models trained on existing data predict new stable perovskite compositions.
+      2. **DFT calculations** check their stability and properties — band gap, crystal parameters.
+      3. The most promising candidates are **synthesized and characterized** in the lab.
+      4. The new experimental data are used to **retrain** the ML models.
+
+      The same approach can be applied to other functional materials — for sensing, batteries and
+      supercapacitors.
+
+      ## Projects and grants
+
+      - **Development of an artificial intelligence-based model for simulation, synthesis, and
+        stabilization of the next generation solar cell and display materials: The perovskites**
+        (22RL-012) — Higher Education and Science Committee, RA MoESCS. 2022–2027.
+      - **Development of an artificial intelligence-based model for simulation, and syntheses of the
+        next generation solar cell: The perovskites** — Enterprise Incubator Foundation (EIF). 2023–2025.
+      - **AI Model Development for Optimization of the LM Composition** — proof-of-concept project
+        financed by Huawei Technologies Oy (Finland). April–August 2025.
+      - **Synthesis of new perovskite nanocrystals and their stabilisation through metal-organic
+        framework systems** (24-YSIP-009, S. Grigoryan) — Tampere University, Finland, and National
+        Institute of Chemistry, Ljubljana, Slovenia. 2025.
+      - **Modification and characterization of capacitive field-effect sensors with
+        enzyme-functionalized TMV nanodisks** (24-YSIP-016, A. Asatryan) — Institute of Nano- and
+        Biotechnologies, Jülich, Germany. 2025.
+      - Support for modernizing the material and technical base of scientific departments —
+        Higher Education and Science Committee, RA MoESCS.
+
+      ## Equipment
+
+      Glovebox, solar simulator, EZ4-S spin coater, SC-UV-I UV/ozone cleaner, Tenkan XQM-2A ball
+      mill, PP-12S press, rotary evaporator, MNPN-3 nitrogen generator (99.999%), xTool F1 Ultra
+      laser engraver.
+  - slug: contacts
+    title: Contacts
+    lead: We are open to collaborations, visiting researchers and students.
+
+research:
+  - title: Machine-learning materials discovery
+    summary: >-
+      Data-driven models trained on known compounds predict new stable lead-free perovskite
+      compositions and guide what to make next.
+    order: 0
+  - title: DFT calculations
+    summary: >-
+      First-principles calculations verify the stability of predicted materials and their key
+      properties — band gap and crystal parameters.
+    order: 1
+  - title: Synthesis and characterization
+    summary: >-
+      Promising candidates are synthesized and characterized in the lab; the results are fed back
+      to retrain the models.
+    order: 2
+  - title: Devices and applications
+    summary: >-
+      Perovskites for solar cells and LEDs, and the same AI-driven approach for batteries,
+      supercapacitors and sensors.
+    order: 3
+
+team:
+  - name: Arevik Asatryan
+    group: pi
+    role: Group Leader
+    education: PhD in Physical and Mathematical Sciences
+    interests: [Statistical mechanics, Biopolymers, Biosensors, Algorithms, Materials science]
+    photo: images/team/arevik-asatryan.jpg
+    orcid: https://orcid.org/0000-0002-7684-8185
+  - name: Sadeh Kaviani
+    group: staff
+    role: Senior Researcher
+    education: PhD in Chemistry
+    order: 1
+  - name: Nane Petrosyan
+    group: staff
+    role: Junior Researcher
+    interests: [Semiconductor physics, Microelectronics, Computational materials science, Battery materials]
+    photo: images/team/nane-petrosyan.jpg
+    orcid: https://orcid.org/0009-0008-3287-6118
+    order: 2
+  - name: Tamar Danielyan
+    group: staff
+    role: Junior Researcher
+    order: 3
+  - name: Sona Grigoryan
+    group: assistant
+    role: Laboratory Assistant
+    interests: [Physical chemistry, Computational chemistry, Materials science, Semiconductors]
+    photo: images/team/sona-grigoryan.jpg
+    orcid: https://orcid.org/0009-0005-5018-5773
+    order: 4
+  - name: Gurgen Kolotyan
+    group: assistant
+    role: Laboratory Assistant
+    photo: images/team/gurgen-kolotyan.jpg
+    order: 5
+  - name: Susanna Atoyan
+    group: assistant
+    role: Laboratory Assistant
+    order: 6
+
+publications:
+  - title: Ionic liquids and covalent organic frameworks for interface engineering in perovskite solar cells
+    authors: Kaviani S., Asatryan A.
+    venue: Solar Energy 315, 114768
+    year: 2026
+    doi: 10.1016/j.solener.2026.114768
+    featured: true
+  - title: Next-generation metal–organic framework design and functionalization for high-performance perovskite solar cells
+    authors: Grigoryan S., Kaviani S., Asatryan A.
+    venue: Journal of Industrial and Engineering Chemistry
+    year: 2026
+    doi: 10.1016/j.jiec.2026.07.029
+  - title: "Heat treatment effects on laser powder bed fused CuNi2.5SiCr alloy: microstructure, hardness, electrical, and thermal conductivity"
+    authors: Ghaltaghchyan T., Khachikyan A., Nikoghosyan V., Asatryan A., Aghayan M.
+    venue: Materials 19(5), 883
+    year: 2026
+    doi: 10.3390/ma19050883
+  - title: "Insights of 3D-printed dielectric elastomer layers: electrical and mechanical properties, and prospects for artificial muscle applications"
+    authors: Asatryan A., Poghosyan N., Torosyan M., Tarasova E., Aghayan M.
+    venue: iScience 29(7)
+    year: 2026
+    doi: 10.1016/j.isci.2026.116385
+  - title: Accelerated composition optimization of hybrid perovskites via data-driven materials design, DFT calculations and synthesis
+    authors: Grigoryan S., Petrosyan N., Kolotyan G., Kozmanyan A., Avetisyan V., Zakaryan H., Schöning M.J., Asatryan A., Khachatryan H.
+    venue: Materials & Design, 114902
+    year: 2025
+    doi: 10.1016/j.matdes.2025.114902
+    featured: true
+  - title: Enhancing perovskite solar cell efficiency and stability through architectural modifications and additives
+    authors: Danielyan T., Asatryan A., Sahakyan A., Khachatryan H.
+    venue: Journal of Power Sources 630, 235995
+    year: 2025
+    doi: 10.1016/j.jpowsour.2024.235995
+    featured: true
+  - title: Molecular dynamics and machine learning framework for predicting ion transport and mechanical properties of ionic liquid@polyvinylidene fluoride gel polymer electrolyte
+    authors: Kaviani S.
+    venue: Journal of Industrial and Engineering Chemistry
+    year: 2025
+    doi: 10.1016/j.jiec.2025.11.034
+  - title: "Covalent organic framework-based solid polymer electrolytes for metal-ion batteries: pioneering the future of DFT, MD, and ML techniques"
+    authors: Kaviani S.
+    venue: Energy Storage Materials, 104671
+    year: 2025
+    doi: 10.1016/j.ensm.2025.104671
+  - title: Origins of fine structure in DNA melting curves
+    authors: Asatryan A.V., Benight A.S., Badasyan A.V.
+    venue: The Journal of Chemical Physics 161(5)
+    year: 2024
+  - title: Correlation function for heteropolymers near the melting temperature
+    authors: Asatryan A.V., Mamasakhlisov Y.S., Morozov V.F.
+    venue: Journal of Contemporary Physics (Armenian Academy of Sciences) 59(2), 208–213
+    year: 2024
+    doi: 10.1134/S1068337224700191
+
+# No news yet — add posts here (slug, title, date, category, summary, body).
+news: []
