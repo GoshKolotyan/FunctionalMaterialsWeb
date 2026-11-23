@@ -23,15 +23,15 @@ export function MoleculeField() {
     <svg className="molecule-field" viewBox="0 0 1400 700" preserveAspectRatio="xMidYMid slice" aria-hidden>
       <defs>
         <radialGradient id="mf-node" cx="35%" cy="35%" r="70%">
-          <stop offset="0%" stopColor="#ffd9a8" />
-          <stop offset="55%" stopColor="#e8794c" />
-          <stop offset="100%" stopColor="#8a3a1f" />
+          <stop offset="0%" stopColor="#e4eeec" />
+          <stop offset="55%" stopColor="#7d9ea3" />
+          <stop offset="100%" stopColor="#2c4247" />
         </radialGradient>
         <filter id="mf-blur">
           <feGaussianBlur stdDeviation="3" />
         </filter>
       </defs>
-      <g stroke="#f0a77f" strokeOpacity="0.35" strokeWidth="5" strokeLinecap="round">
+      <g stroke="#a3b6ae" strokeOpacity="0.35" strokeWidth="5" strokeLinecap="round">
         {CHAINS.map((chain, c) =>
           chain.slice(1).map((n, i) => (
             <line key={`${c}-${i}`} x1={chain[i][0]} y1={chain[i][1]} x2={n[0]} y2={n[1]} />
@@ -46,7 +46,7 @@ export function MoleculeField() {
           <circle key={i} cx={x} cy={y} r={r} opacity={0.55 + (i % 3) * 0.15} />
         ))}
       </g>
-      <g fill="#ffcf8a" filter="url(#mf-blur)" opacity="0.35">
+      <g fill="#d8cd8c" filter="url(#mf-blur)" opacity="0.35">
         <circle cx="120" cy="600" r="40" />
         <circle cx="1300" cy="90" r="55" />
         <circle cx="620" cy="640" r="28" />
