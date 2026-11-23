@@ -8,7 +8,6 @@ export interface Member {
   group: MemberGroup
   education: string
   bio: string
-  interests: string[]
   photo: string
   email: string
   orcid: string

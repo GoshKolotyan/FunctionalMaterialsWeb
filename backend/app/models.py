@@ -3,7 +3,6 @@
 from datetime import date
 from enum import Enum
 
-from sqlalchemy import JSON, Column
 from sqlmodel import Field, SQLModel
 
 
@@ -23,7 +22,6 @@ class MemberBase(SQLModel):
     group: MemberGroup = MemberGroup.staff
     education: str = ""
     bio: str = ""
-    interests: list[str] = Field(default_factory=list, sa_column=Column(JSON))
     photo: str = ""  # path relative to site root, e.g. "images/team/ivanov.jpg", or full URL
     email: str = ""
     orcid: str = ""  # full ORCID URL

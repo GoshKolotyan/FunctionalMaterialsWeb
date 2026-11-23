@@ -44,12 +44,12 @@ def test_pages_upsert(client):
     assert page == {"slug": "about", "title": "About", "lead": "", "body": "v2"}
 
 
-def test_member_group_and_interests(client):
+def test_member_group(client):
     m = client.post(
         "/api/team",
-        json={"name": "X", "role": "r", "group": "phd", "interests": ["a", "b"]},
+        json={"name": "X", "role": "r", "group": "phd"},
     ).json()
-    assert m["group"] == "phd" and m["interests"] == ["a", "b"]
+    assert m["group"] == "phd"
     assert (
         client.post("/api/team", json={"name": "Y", "role": "r", "group": "boss"}).status_code
         == 422
