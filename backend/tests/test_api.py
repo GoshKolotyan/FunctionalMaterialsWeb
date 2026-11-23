@@ -62,6 +62,13 @@ def test_research_crud(client):
     assert [r["title"] for r in client.get("/api/research").json()] == ["A", "B"]
 
 
+def test_products_crud(client):
+    assert client.get("/api/products").json() == []
+    client.post("/api/products", json={"title": "B", "order": 1})
+    client.post("/api/products", json={"title": "A", "order": 0})
+    assert [p["title"] for p in client.get("/api/products").json()] == ["A", "B"]
+
+
 def test_site_info_defaults_and_update(client):
     assert client.get("/api/site").json()["name"] == "Functional Materials"
     client.put("/api/site", json={"name": "FM", "email": "x@example.org"})

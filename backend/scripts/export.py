@@ -13,7 +13,7 @@ from fastapi.testclient import TestClient
 from app.config import BACKEND_DIR
 from app.main import app
 
-ENDPOINTS = ["site", "team", "research", "publications", "news", "pages"]
+ENDPOINTS = ["site", "team", "research", "publications", "products", "news", "pages"]
 DEFAULT_OUT = BACKEND_DIR.parent / "frontend" / "public" / "data"
 
 

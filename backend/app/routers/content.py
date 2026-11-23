@@ -9,6 +9,8 @@ from app.models import (
     NewsPostBase,
     Page,
     PageBase,
+    Product,
+    ProductBase,
     Publication,
     PublicationBase,
     ResearchArea,
@@ -40,6 +42,14 @@ publications = crud_router(
     model=Publication,
     create_model=PublicationBase,
     order_by=lambda: [Publication.year.desc(), Publication.title],
+)
+
+products = crud_router(
+    prefix="/products",
+    tag="products",
+    model=Product,
+    create_model=ProductBase,
+    order_by=lambda: [Product.order, Product.title],
 )
 
 news = crud_router(
@@ -103,4 +113,4 @@ def update_site(data: SiteInfoBase, session: Session = Depends(get_session)):
     return info
 
 
-ROUTERS = [site, team, research, publications, news, pages]
+ROUTERS = [site, team, research, publications, products, news, pages]

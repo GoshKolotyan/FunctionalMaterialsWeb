@@ -33,6 +33,15 @@ export interface Publication {
   featured: boolean
 }
 
+export interface Product {
+  id: number
+  title: string
+  summary: string
+  image: string
+  url: string
+  order: number
+}
+
 export interface NewsPost {
   id: number
   slug: string

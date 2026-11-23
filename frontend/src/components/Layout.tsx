@@ -7,10 +7,10 @@ import { Logo } from './Logo'
 import { Social } from './Social'
 
 const NAV = [
-  { to: '/', label: 'Home', end: true },
   { to: '/about', label: 'About' },
   { to: '/team', label: 'Team' },
   { to: '/publications', label: 'Publications' },
+  { to: '/products', label: 'Products' },
   { to: '/news', label: 'News' },
   { to: '/contacts', label: 'Contacts' },
 ]
@@ -45,7 +45,7 @@ export function Layout() {
           </button>
           <nav className={`nav ${open ? 'nav-open' : ''}`} aria-label="Main">
             {NAV.map((item) => (
-              <NavLink key={item.to} to={item.to} end={item.end}>
+              <NavLink key={item.to} to={item.to}>
                 {item.label}
               </NavLink>
             ))}
