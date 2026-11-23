@@ -43,6 +43,18 @@ class ResearchArea(ResearchAreaBase, table=True):
     id: int | None = Field(default=None, primary_key=True)
 
 
+class ProductBase(SQLModel):
+    title: str
+    summary: str = ""
+    image: str = ""
+    url: str = ""
+    order: int = 0
+
+
+class Product(ProductBase, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+
+
 class PublicationBase(SQLModel):
     title: str
     authors: str  # "A. Author, B. Author" — names matching team members get highlighted

@@ -8,13 +8,14 @@ from sqlmodel import Session, SQLModel
 
 from app.config import BACKEND_DIR
 from app.db import create_db, engine
-from app.models import Member, NewsPost, Page, Publication, ResearchArea, SiteInfo
+from app.models import Member, NewsPost, Page, Product, Publication, ResearchArea, SiteInfo
 
 TABLES: dict[str, type[SQLModel]] = {
     "pages": Page,
     "team": Member,
     "research": ResearchArea,
     "publications": Publication,
+    "products": Product,
     "news": NewsPost,
 }
 

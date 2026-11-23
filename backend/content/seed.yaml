@@ -195,5 +195,8 @@ publications:
     year: 2024
     doi: 10.1134/S1068337224700191
 
+# No products yet — add entries here (title, summary, image, url, order).
+products: []
+
 # No news yet — add posts here (slug, title, date, category, summary, body).
 news: []

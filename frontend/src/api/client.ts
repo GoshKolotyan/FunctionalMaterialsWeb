@@ -1,4 +1,4 @@
-import type { Member, NewsPost, Page, Publication, ResearchArea, SiteInfo } from '../types'
+import type { Member, NewsPost, Page, Product, Publication, ResearchArea, SiteInfo } from '../types'
 
 const MODE = import.meta.env.VITE_DATA_MODE ?? (import.meta.env.DEV ? 'api' : 'static')
 const API_URL = import.meta.env.VITE_API_URL ?? ''
@@ -38,6 +38,7 @@ export const api = {
   team: () => resource<Member[]>('team'),
   research: () => resource<ResearchArea[]>('research'),
   publications: () => resource<Publication[]>('publications'),
+  products: () => resource<Product[]>('products'),
   news: () => resource<NewsPost[]>('news'),
   newsPost: (slug: string) => findOne(resource<NewsPost[]>('news'), (n) => n.slug === slug),
   page: (slug: string) => findOne(resource<Page[]>('pages'), (p) => p.slug === slug),
