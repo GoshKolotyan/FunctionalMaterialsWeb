@@ -8,19 +8,6 @@ import { PageHeader } from '../components/PageHeader'
 import { GROUP_LABELS, GROUP_ORDER } from '../team'
 import type { Member, MemberGroup } from '../types'
 
-function Interests({ items }: { items: string[] }) {
-  if (!items.length) return null
-  return (
-    <div className="chips">
-      {items.map((t) => (
-        <span key={t} className="chip">
-          {t}
-        </span>
-      ))}
-    </div>
-  )
-}
-
 function Links({ m, full = false }: { m: Member; full?: boolean }) {
   if (!m.email && !m.orcid) return null
   return (
@@ -48,7 +35,6 @@ function LeadCard({ m }: { m: Member }) {
         <p className="role">{m.role}</p>
         {m.education && <p className="mono muted small">{m.education}</p>}
         {m.bio && <p className="bio">{m.bio}</p>}
-        <Interests items={m.interests} />
         <Links m={m} full />
       </div>
     </article>
@@ -62,7 +48,6 @@ function MemberCard({ m }: { m: Member }) {
       <h3>{m.name}</h3>
       <p className="role">{m.role}</p>
       {m.bio && <p className="bio">{m.bio}</p>}
-      <Interests items={m.interests} />
       <Links m={m} />
     </article>
   )

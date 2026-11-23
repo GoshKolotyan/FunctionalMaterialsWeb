@@ -101,29 +101,28 @@ team:
     group: pi
     role: Group Leader
     education: PhD in Physical and Mathematical Sciences
-    interests: [Statistical mechanics, Biopolymers, Biosensors, Algorithms, Materials science]
     photo: images/team/arevik-asatryan.jpg
     orcid: https://orcid.org/0000-0002-7684-8185
   - name: Sadeh Kaviani
     group: staff
     role: Senior Researcher
     education: PhD in Chemistry
+    orcid: https://orcid.org/0000-0002-4706-8200
     order: 1
   - name: Nane Petrosyan
     group: staff
     role: Junior Researcher
-    interests: [Semiconductor physics, Microelectronics, Computational materials science, Battery materials]
     photo: images/team/nane-petrosyan.jpg
     orcid: https://orcid.org/0009-0008-3287-6118
     order: 2
-  - name: Tamar Danielyan
+  - name: Michele Galasso
     group: staff
     role: Junior Researcher
+    orcid: https://orcid.org/0000-0002-8292-3401
     order: 3
   - name: Sona Grigoryan
     group: assistant
     role: Laboratory Assistant
-    interests: [Physical chemistry, Computational chemistry, Materials science, Semiconductors]
     photo: images/team/sona-grigoryan.jpg
     orcid: https://orcid.org/0009-0005-5018-5773
     order: 4
@@ -131,11 +130,16 @@ team:
     group: assistant
     role: Laboratory Assistant
     photo: images/team/gurgen-kolotyan.jpg
+    orcid: https://orcid.org/0009-0001-1241-5145
     order: 5
   - name: Susanna Atoyan
     group: assistant
     role: Laboratory Assistant
     order: 6
+  - name: Vahe Hovhannisyan
+    group: assistant
+    role: Laboratory Assistant
+    order: 7
 
 publications:
   - title: Ionic liquids and covalent organic frameworks for interface engineering in perovskite solar cells
