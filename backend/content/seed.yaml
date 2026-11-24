@@ -121,13 +121,13 @@ team:
     orcid: https://orcid.org/0000-0002-8292-3401
     order: 3
   - name: Sona Grigoryan
-    group: staff
+    group: assistant
     role: Lead Chemist
     photo: images/team/sona-grigoryan.jpg
     orcid: https://orcid.org/0009-0005-5018-5773
     order: 4
   - name: Gurgen Kolotyan
-    group: staff
+    group: assistant
     role: ML Specialist
     photo: images/team/gurgen-kolotyan.jpg
     orcid: https://orcid.org/0009-0001-1241-5145
@@ -137,7 +137,7 @@ team:
     role: Laboratory Assistant
     order: 6
   - name: Vahe Hovhannisyan
-    group: staff
+    group: assistant
     role: Chemist
     order: 7
 
