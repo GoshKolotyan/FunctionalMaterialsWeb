@@ -135,10 +135,12 @@ team:
   - name: Susanna Atoyan
     group: assistant
     role: Laboratory Assistant
+    orcid: https://orcid.org/0009-0001-0039-8050
     order: 6
   - name: Vahe Hovhannisyan
     group: assistant
     role: Chemist
+    orcid: https://orcid.org/0009-0008-1107-962X
     order: 7
 
 publications:
