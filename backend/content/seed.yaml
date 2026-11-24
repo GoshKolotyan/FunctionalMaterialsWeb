@@ -103,7 +103,7 @@ team:
     education: PhD in Physical and Mathematical Sciences
     photo: images/team/arevik-asatryan.jpg
     orcid: https://orcid.org/0000-0002-7684-8185
-  - name: Sadeh Kaviani
+  - name: Sadegh Kaviani
     group: staff
     role: Senior Researcher
     education: PhD in Chemistry
@@ -111,24 +111,24 @@ team:
     order: 1
   - name: Nane Petrosyan
     group: staff
-    role: Junior Researcher
+    role: Junior Researcher / DFT, MD Specialist
     photo: images/team/nane-petrosyan.jpg
     orcid: https://orcid.org/0009-0008-3287-6118
     order: 2
   - name: Michele Galasso
     group: staff
-    role: Junior Researcher
+    role: Researcher
     orcid: https://orcid.org/0000-0002-8292-3401
     order: 3
   - name: Sona Grigoryan
-    group: assistant
-    role: Laboratory Assistant
+    group: staff
+    role: Lead Chemist
     photo: images/team/sona-grigoryan.jpg
     orcid: https://orcid.org/0009-0005-5018-5773
     order: 4
   - name: Gurgen Kolotyan
-    group: assistant
-    role: Laboratory Assistant
+    group: staff
+    role: ML Specialist
     photo: images/team/gurgen-kolotyan.jpg
     orcid: https://orcid.org/0009-0001-1241-5145
     order: 5
@@ -137,11 +137,13 @@ team:
     role: Laboratory Assistant
     order: 6
   - name: Vahe Hovhannisyan
-    group: assistant
-    role: Laboratory Assistant
+    group: staff
+    role: Chemist
     order: 7
 
 publications:
+  # Verified against Crossref/ORCID/OpenAlex (2026-11). Year = issue (print) year.
+  # Listed: works with an ICP NAS RA / Functional Materials Group affiliation.
   - title: Ionic liquids and covalent organic frameworks for interface engineering in perovskite solar cells
     authors: Kaviani S., Asatryan A.
     venue: Solar Energy 315, 114768
@@ -150,50 +152,71 @@ publications:
     featured: true
   - title: Next-generation metal–organic framework design and functionalization for high-performance perovskite solar cells
     authors: Grigoryan S., Kaviani S., Asatryan A.
-    venue: Journal of Industrial and Engineering Chemistry
+    venue: Journal of Industrial and Engineering Chemistry 164, 115–139
     year: 2026
     doi: 10.1016/j.jiec.2026.07.029
+  - title: "Insights of 3D-printed dielectric elastomer layers: electrical and mechanical properties, and prospects for artificial muscle applications"
+    authors: Asatryan A., Poghosyan N., Torosyan M., Tarasova E., Aghayan M.
+    venue: iScience 29(7), 116385
+    year: 2026
+    doi: 10.1016/j.isci.2026.116385
+  - title: Molecular dynamics and machine learning framework for predicting ion transport and mechanical properties of ionic liquid@polyvinylidene fluoride gel polymer electrolyte
+    authors: Kaviani S.
+    venue: Journal of Industrial and Engineering Chemistry 158, 585–596
+    year: 2026
+    doi: 10.1016/j.jiec.2025.11.034
   - title: "Heat treatment effects on laser powder bed fused CuNi2.5SiCr alloy: microstructure, hardness, electrical, and thermal conductivity"
     authors: Ghaltaghchyan T., Khachikyan A., Nikoghosyan V., Asatryan A., Aghayan M.
     venue: Materials 19(5), 883
     year: 2026
     doi: 10.3390/ma19050883
-  - title: "Insights of 3D-printed dielectric elastomer layers: electrical and mechanical properties, and prospects for artificial muscle applications"
-    authors: Asatryan A., Poghosyan N., Torosyan M., Tarasova E., Aghayan M.
-    venue: iScience 29(7)
+  - title: "Computational discovery of Li6PO5I: an oxide argyrodite for solid-state electrolytes"
+    authors: Petrosyan N., Hunanyan A., Dallakyan O., Khachatryan L., Sahakyan M., Chobanyan M., Zakaryan H.
+    venue: ACS Applied Energy Materials 9(2), 1159–1167
     year: 2026
-    doi: 10.1016/j.isci.2026.116385
+    doi: 10.1021/acsaem.5c03545
   - title: Accelerated composition optimization of hybrid perovskites via data-driven materials design, DFT calculations and synthesis
     authors: Grigoryan S., Petrosyan N., Kolotyan G., Kozmanyan A., Avetisyan V., Zakaryan H., Schöning M.J., Asatryan A., Khachatryan H.
-    venue: Materials & Design, 114902
+    venue: Materials & Design 260, 114902
     year: 2025
     doi: 10.1016/j.matdes.2025.114902
     featured: true
+  - title: "Covalent organic framework-based solid polymer electrolytes for metal-ion batteries: pioneering the future of DFT, MD, and ML techniques"
+    authors: Kaviani S.
+    venue: Energy Storage Materials 82, 104671
+    year: 2025
+    doi: 10.1016/j.ensm.2025.104671
+  - title: DFT analysis of furan-based covalent organic framework as electrode materials for lithium and calcium ion batteries
+    authors: Shamsieva A., Evseev A., Kaviani S., Nedopekin O.V., Zakaryan H., Piyanzina I.I.
+    venue: Computational and Theoretical Chemistry 1253, 115445
+    year: 2025
+    doi: 10.1016/j.comptc.2025.115445
+  - title: "A DFT study on an 18-crown-6-like-N8 structure as a material for metal ion storage: stability and performance"
+    authors: Piyanzina I.I., Burganova R.M., Kaviani S., Nedopekin O.V., Zakaryan H.
+    venue: Sustainable Energy & Fuels 9(18), 5075–5084
+    year: 2025
+    doi: 10.1039/d5se00333d
   - title: Enhancing perovskite solar cell efficiency and stability through architectural modifications and additives
     authors: Danielyan T., Asatryan A., Sahakyan A., Khachatryan H.
     venue: Journal of Power Sources 630, 235995
     year: 2025
     doi: 10.1016/j.jpowsour.2024.235995
     featured: true
-  - title: Molecular dynamics and machine learning framework for predicting ion transport and mechanical properties of ionic liquid@polyvinylidene fluoride gel polymer electrolyte
-    authors: Kaviani S.
-    venue: Journal of Industrial and Engineering Chemistry
-    year: 2025
-    doi: 10.1016/j.jiec.2025.11.034
-  - title: "Covalent organic framework-based solid polymer electrolytes for metal-ion batteries: pioneering the future of DFT, MD, and ML techniques"
-    authors: Kaviani S.
-    venue: Energy Storage Materials, 104671
-    year: 2025
-    doi: 10.1016/j.ensm.2025.104671
   - title: Origins of fine structure in DNA melting curves
     authors: Asatryan A.V., Benight A.S., Badasyan A.V.
-    venue: The Journal of Chemical Physics 161(5)
+    venue: The Journal of Chemical Physics 161(5), 055103
     year: 2024
+    doi: 10.1063/5.0213526
   - title: Correlation function for heteropolymers near the melting temperature
     authors: Asatryan A.V., Mamasakhlisov Y.S., Morozov V.F.
     venue: Journal of Contemporary Physics (Armenian Academy of Sciences) 59(2), 208–213
     year: 2024
     doi: 10.1134/S1068337224700191
+  - title: Effective hybrid perovskites for solar cell applications
+    authors: Grigoryan S., Kolotyan G., Petrosyan N., Asatryan A., Khachatryan H.
+    venue: MATSUS Fall 2024 conference (abstract)
+    year: 2024
+    doi: 10.29363/nanoge.matsusfall.2024.071
 
 # No products yet — add entries here (title, summary, image, url, order).
 products: []
